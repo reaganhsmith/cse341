@@ -7,11 +7,13 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use((req, res, next) =>{
+app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();
 });
-
-app.use('/professional', professionalRoutes)
-
-app.listen(8080);
+ 
+app.use('/professional', professionalRoutes);
+ 
+app.listen(process.env.PORT || 8080, () => {
+  console.log('Web Server is listening at port ' + (process.env.PORT || 8080));
+});

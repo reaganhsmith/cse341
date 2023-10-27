@@ -1,27 +1,27 @@
 const data = {
-    professionalName: 'Nathan Birch',
+    professionalName: 'Reagan Houser-Smith',
     nameLink: {
-      firstName: 'Nathan',
+      firstName: 'Reagan',
       url: 'https://nathanbirch.netlify.app/',
     },
     base64Image: '',
-    firstName: 'Nathan',
-    primaryDescription: 'is a professor at BYU-Idaho',
-    workDescription1: 'He is a full-stack web developer and mobile application developer.',
-    workDescription2: 'He teaches lots of programming and web development classes.',
-    linkTitleText: 'Check out his work below',
+    firstName: 'Reagan',
+    primaryDescription: 'is a student at BYU-Idaho',
+    workDescription1: 'She is a full-stack web developer',
+    workDescription2: 'She is a teachers assistant for WDD230',
+    linkTitleText: 'Check out her work below',
     linkedInLink: {
-      link: 'https://www.linkedin.com/in/nathantbirch/',
+      link: 'https://www.linkedin.com/in/reagan-houser/',
       text: 'LinkedIn'
     },
     githubLink: {
-      link: 'https://github.com/nathanbirch',
+      link: 'https://github.com/reaganhsmith',
       text: 'GitHub'
     },
-    contactText: 'Feel free to contact him at birchn@byui.edu if youd like for him to work for you!'
+    contactText: 'Feel free to contact her at reagansmith@byui.edu if youd like for him to work for you!'
 }
 
 
-exports.getData = (req, res, next) =>{
+exports.getData = (req, res) =>{
     res.status(200).json(data);
 };
