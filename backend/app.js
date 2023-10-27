@@ -1,10 +1,17 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
+const professionalRoutes = require('./routes/professional');
+
 const app = express();
- 
-app.get('/', (req, res) => {
-  res.send("Hello");
+
+app.use(bodyParser.json());
+
+app.use((req, res, next) =>{
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
 });
- 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Web Server is listening at port ' + (process.env.PORT || 3000));
-});
+
+app.use('/professional', professionalRoutes)
+
+app.listen(8080);
