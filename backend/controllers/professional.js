@@ -18,7 +18,7 @@ const data = {
       link: 'https://github.com/reaganhsmith',
       text: 'GitHub'
     },
-    contactText: 'Feel free to contact her at reagansmith@byui.edu if youd like for him to work for you!'
+    contactText: 'Feel free to contact herZ at reagansmith@byui.edu if youd like for him to work for you!'
 }
 
 
