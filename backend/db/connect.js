@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
 dotenv.config();
-const mongodbUri = 'mongodb+srv://reagansmith:ByuiCSE341m@cluster0.ufsf3y0.mongodb.net/test';
+const mongodbUri = 'mongodb+srv://reagansmith:ByuiCSE341@cluster0.ufsf3y0.mongodb.net/test';
 console.log('MongoDB URI:', mongodbUri);
 
 const MongoClient = require('mongodb').MongoClient;
